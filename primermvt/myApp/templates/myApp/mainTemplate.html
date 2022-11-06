@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Template</title>
+</head>
+<body>
+
+    <h1 style="text-align:center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">DATOS FAMILIARES</h1>
+    <div >
+        {% for dato in datos %}
+            <div style="border:5px outset ghostwhite; margin:25px 0 30px 10px; width:40%;padding:2px;">
+                <h2>Nombre: {{ dato.nombre }}</h2>
+                <h2>Apellido: {{ dato.apellido }}</h2>
+                <h2>Edad: {{ dato.edad }}</h2>
+                <h2>Fecha nac: {{ dato.fechaNac }}</h2>
+            </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
